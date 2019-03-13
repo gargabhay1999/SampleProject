@@ -3,7 +3,7 @@ node
 {
     stage('checkout')
     {
-        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/gargabhay1999/SampleProject.git']]])
+        checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[url: 'https://github.com/gargabhay199/SampleProject.git']]])
         workspace = pwd();
     }
     stage('Static Code Analysis')
